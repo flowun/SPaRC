@@ -58,10 +58,17 @@ def generate_prompt_step_by_step_visual_traceback(puzzle_data: Dict) -> str:
     return prompt_dict["system"]
 
 
+def generate_prompt_visual_prompt_engineering(puzzle_data: Dict) -> str:
+    """Generate single-shot visual prompt engineering prompt (backward compatible)."""
+    prompt_dict = _get_single_shot_visual_prompt_engineering(puzzle_data)
+    return prompt_dict["user"]
+
+
 # Export everything
 __all__ = [
     "generate_prompt",
     "generate_prompt_visual",
+    "generate_prompt_visual_prompt_engineering",
     "generate_prompt_step_by_step",
     "generate_prompt_step_by_step_traceback",
     "generate_prompt_step_by_step_visual",
