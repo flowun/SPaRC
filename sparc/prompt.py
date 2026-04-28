@@ -14,6 +14,7 @@ from sparc.prompts import (
 )
 from sparc.prompts.single_shot import get_prompt as _get_single_shot
 from sparc.prompts.single_shot_visual import get_prompt as _get_single_shot_visual
+from sparc.prompts.single_shot_visual_prompt_engineering import get_prompt as _get_single_shot_visual_prompt_engineering
 from sparc.prompts.gym_step import get_prompt as _get_gym_step
 from sparc.prompts.gym_step_traceback import get_prompt as _get_gym_step_traceback
 from sparc.prompts.gym_visual import get_prompt as _get_gym_visual
